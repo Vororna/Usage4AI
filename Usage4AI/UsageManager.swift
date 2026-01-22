@@ -244,8 +244,8 @@ class UsageManager: ObservableObject {
     }
 
     var timeProgress: Double {
-        guard let usage = usage else { return 0.0 }
-        let fiveHourUsage = DisplayUsage(name: "5-Hour Session", icon: "clock", limit: usage.fiveHour)
+        guard let usage = usage, let fiveHour = usage.fiveHour else { return 0.0 }
+        let fiveHourUsage = DisplayUsage(name: "5-Hour Session", icon: "clock", limit: fiveHour)
         return fiveHourUsage.timeProgress
     }
 
@@ -265,8 +265,8 @@ class UsageManager: ObservableObject {
     }
 
     var usageStatus: UsageStatus {
-        guard let usage = usage else { return .normal }
-        let fiveHourUsage = DisplayUsage(name: "5-Hour Session", icon: "clock", limit: usage.fiveHour)
+        guard let usage = usage, let fiveHour = usage.fiveHour else { return .normal }
+        let fiveHourUsage = DisplayUsage(name: "5-Hour Session", icon: "clock", limit: fiveHour)
         return fiveHourUsage.status
     }
 
@@ -286,13 +286,22 @@ class UsageManager: ObservableObject {
 
         guard let usage = usage else { return [] }
 
-        var usages = [
-            DisplayUsage(name: "5-Hour Session", icon: "clock", limit: usage.fiveHour),
-            DisplayUsage(name: "Weekly Limit", icon: "calendar", limit: usage.sevenDay)
-        ]
+        var usages: [DisplayUsage] = []
+
+        if let fiveHour = usage.fiveHour {
+            usages.append(DisplayUsage(name: "5-Hour Session", icon: "clock", limit: fiveHour))
+        }
+
+        if let sevenDay = usage.sevenDay {
+            usages.append(DisplayUsage(name: "Weekly Limit", icon: "calendar", limit: sevenDay))
+        }
+
+        if let opus = usage.sevenDayOpus {
+            usages.append(DisplayUsage(name: "Opus Only", icon: "target", limit: opus))
+        }
 
         if let sonnet = usage.sevenDaySonnet {
-            usages.append(DisplayUsage(name: "Sonnet Only", icon: "target", limit: sonnet))
+            usages.append(DisplayUsage(name: "Sonnet Only", icon: "bolt", limit: sonnet))
         }
 
         cachedAllDisplayUsages = usages

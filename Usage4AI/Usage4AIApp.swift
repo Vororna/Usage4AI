@@ -44,8 +44,8 @@ struct MenuBarLabel: View {
     @ObservedObject var manager: UsageManager
 
     private var usagePercentage: Int {
-        guard let usage = manager.usage else { return 0 }
-        let util = usage.fiveHour.utilization
+        guard let usage = manager.usage, let fiveHour = usage.fiveHour else { return 0 }
+        let util = fiveHour.utilization
         // < 90% 無條件進位，>= 90% 無條件捨去
         if util < Constants.Usage.criticalThreshold {
             return Int(ceil(util))
