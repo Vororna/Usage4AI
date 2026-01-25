@@ -104,7 +104,8 @@ struct SettingsView: View {
                 try SMAppService.mainApp.unregister()
             }
         } catch {
-            // Silently handle login item registration failure
+            // Revert toggle state on failure
+            launchAtLogin = !enabled
         }
     }
 }
