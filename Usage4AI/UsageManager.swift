@@ -273,12 +273,16 @@ class UsageManager: ObservableObject {
             return cached
         }
 
+        let defaultUsage = DisplayUsage(name: "Unknown", icon: "?", limit: UsageLimit(utilization: 0, resetsAt: nil))
+
         guard usage != nil else {
-            return DisplayUsage(name: "Unknown", icon: "?", limit: UsageLimit(utilization: 0, resetsAt: nil))
+            return defaultUsage
         }
 
         let allUsages = allDisplayUsages
-        let result = allUsages.max(by: { $0.percentage < $1.percentage }) ?? allUsages.first!
+        guard let result = allUsages.max(by: { $0.percentage < $1.percentage }) else {
+            return defaultUsage
+        }
         cachedMaxDisplayUsage = result
         return result
     }
