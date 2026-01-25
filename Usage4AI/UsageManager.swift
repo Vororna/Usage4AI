@@ -268,7 +268,7 @@ class UsageManager: ObservableObject {
         }
 
         guard usage != nil else {
-            return DisplayUsage(name: "Unknown", icon: "?", limit: UsageLimit(utilization: 0, resetsAt: ""))
+            return DisplayUsage(name: "Unknown", icon: "?", limit: UsageLimit(utilization: 0, resetsAt: nil))
         }
 
         let allUsages = allDisplayUsages

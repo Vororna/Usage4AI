@@ -3,7 +3,7 @@ import CoreGraphics
 
 enum Constants {
     enum App {
-        static let version = "0.1.4"
+        static let version = "0.1.5"
         static let name = "Usage4AI"
     }
 
